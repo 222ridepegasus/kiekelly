@@ -1,0 +1,21 @@
+{
+  "title": "Kieran Kelly",
+  "url": "https://kierankelly.net/",
+  "language": "en",
+  "description": "Some shite about UX and UI.",
+  "feed": {
+    "subtitle": "I write some shite",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://kierankelly.net/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://kierankelly.net/feed/feed.json"
+  },
+  "author": {
+    "name": "Kieran Kelly",
+    "email": "kiekelly1976@gmail.com",
+    "url": "https://kierankelly.net/about-me/"
+  }
+}
