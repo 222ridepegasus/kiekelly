@@ -5,15 +5,33 @@ fields:
 - type: text
   name: title
   label: title
+  description: This is where you fill in the title you dummy
+  config:
+    required: true
+    min: 3
+    max: 160
 - type: text
   name: description
   label: description
+  config:
+    required: true
+    min: 16
+    max: 160
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: DD/MM/YYYY
+    export_format: YYYY-MM-DD
+    required: true
+  default: now
 - type: list
   name: tags
   label: tags
+  config:
+    use_select: false
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: layouts/post.njk
