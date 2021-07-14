@@ -35,3 +35,5 @@ fields:
   label: layout
   hidden: true
   default: layouts/post.njk
+pages:
+- posts/so-this-is-like-my-2nd-post.md
