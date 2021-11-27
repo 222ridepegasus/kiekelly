@@ -1,0 +1,295 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="dist/css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <title>Document</title>
+    </head>
+
+    <body class="bg-gray-50 pt-24 pb-24">
+
+        
+        
+        <div class="bg-gray-500" x-data="{ open: false, name: 'kieran is great' }">
+            <button @click="open = true">Expand</button>
+            <input type="text" x-model="name">
+            <div class="bg-red-500" x-show="open">
+                <div x-text="name"></div>
+                <button @click="open = false">close</button>
+            </div>
+        </div>
+
+        <div class="mx-auto pb-24 xl:max-w-screen-xl xl:px-4"> <!-- container (stops fluid layout) -->
+
+            <!-- Hero card rebuilt-->
+            <div class="bg-red-200 h-96 overflow-hidden relative shadow-md sm:mx-6 sm:rounded-2xl ">
+                <div class="absolute inset-0">
+                    <img class="h-full w-full object-cover" 
+                        src="img/dubai_hero_test.jpg" 
+                        alt="Nice picture of folks on holiday">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900 h-56"></div>
+                </div>
+                <div class="relative pt-48 px-6">
+                        <h1 class="text-3xl font-bold tracking-wide text-center text-white ">Bangkok, Chiang Mai & Koh Samui</h1>
+                        <p class="text-lg font-medium text-center text-gray-200">14 night multi centre holiday from <span class="">£1290</span> per person</p>
+                        <a href="#" class="">Book Now</a>
+                </div>
+
+            </div>
+
+            <br /><br /><br />
+                
+            <!-- Hero card -->
+            <div class="relative">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+                
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+                    <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+                        <div class="absolute inset-0">
+                            <img class="h-full w-full object-cover"
+                                src="/img/bangkok_@2x.png"
+                                alt="Nice picture of folks on holiday">
+                            <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+                        </div>
+                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                            <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                <span class="block text-white">Take control of your</span>
+                                <span class="block text-indigo-200">customer support</span>
+                            </h1>
+                            <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
+                                commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. 
+                            </p>
+                            <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br /><br /><br />
+
+        <div class="mx-auto xl:max-w-screen-xl xl:px-4"> <!-- container (stops fluid layout) -->
+            <div class="px-6 space-y-6 sm:space-y-0 sm:grid sm:gap-6 sm:grid-cols-2 md:space-y-0 lg:grid-cols-3"> <!-- grid -->
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                        
+                    <img class="h-56 w-full object-cover" src="/img/cropped/ny_640_5.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">New York & San Fransisco York & San Fransisco York & San Fransisco</p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">7 night twin centre holiday</p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£2850<span class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View Details</button>
+                    </div>
+        
+                </div>
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                    <img class="h-56 w-full object-cover" src="/img/cropped/test_640_1.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">Bangkok, Chiang Mai & Phuket</p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">14 night multi centre holiday</p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£1999<span class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View Details</button>
+                    </div>
+                </div>
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                    <img class="h-56 w-full object-cover" src="/img/cropped/thai_1.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">South Georgia & Sandwich Islands</p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">14 night multi centre holiday
+                        </p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£1999<span
+                                class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                    <img class="h-56 w-full object-cover" src="/img/cropped/sey_640_1.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">Goa, Sri Lanka & The Maldives</p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">21 night multi centre holiday
+                        </p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£1999<span
+                                class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                    <img class="h-56 w-full object-cover" src="/img/cropped/ice_640_4.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">Iceland & Greenland</p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">10 night twin centre holiday
+                        </p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£1500<span
+                                class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- card offer component -->
+                <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+                    <img class="h-56 w-full object-cover" src="/img/cropped/mal_640_3.jpg" alt="Dubai">
+                    <div class="px-6 pt-3 pb-8">
+                        <p class="h-16 overflow-ellipsis overflow-hidden mt-1 text-2xl leading-tight tracking-wide font-bold text-black">Paris, Dubai & The Maldives </p>
+                        <p class="mt-1 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">14 night multi centre holiday
+                        </p>
+                        <p class="mb-4 text-3xl font-bold text-black tracking-wider">£3500<span
+                                class="pl-2 text-lg font-medium text-gray-400">/ per person</span></p>
+                        <button type="button" class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View
+                            Details</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+        
+        <div x-data="
+                    {destinations:[
+                        {name:'New York, Las Vegas & San Fransisco', image:'img/cropped/ny_640_5.jpg', type:'7 night twin centre holiday', price:'£2550'},
+                        {name:'San Fransisco, Los Angeles and Cancun', image:'img/cropped/test_640_1.jpg', type:'14 night twin centre holiday',price:'£1260'},
+                        {name:'Iceland & Greenland', image:'img/cropped/ice_640_2.jpg',type:'14 multi twin centre holiday',price:'£850'},
+                        {name:'Paris, Dubai & The Maldives', image:'img/cropped/sey_640_1.jpg', type:'21 multi twin centre holiday',price:'£2299'},
+                        {name:'Oslo, Lapland, Helsinki', image:'img/cropped/ice_640_4.jpg', type:'10 multi twin centre holiday',price:'£850'},
+                        {name:'Bangok, Hong Kong, Singapore', image:'img/cropped/thai_1.jpg', type:'14 night multi centre holiday',price:'£999'}
+                        ]}
+                ">
+
+            <div class="mx-auto xl:max-w-screen-xl xl:px-4">
+                <div class="px-6 space-y-6 sm:space-y-0 sm:grid sm:gap-6 sm:grid-cols-2 md:space-y-0 lg:grid-cols-3">
+                           
+                    <!-- card offer component -->
+                    <template x-for="destination in destinations">
+                        <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+        
+                            <img class="h-56 w-full object-cover" x-bind:src="destination.image" alt="a beautiful holiday picture">
+                            <div class="px-6 pt-6 pb-8">
+                                <p x-text="destination.name" class="h-16 overflow-ellipsis overflow-hidden text-2xl leading-tight tracking-wider font-bold text-black">New York & San Fransisco York & San Fransisco York & San Fransisco</p>
+                                <p x-text="destination.type" class="mt-2 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">7 night twin centre holiday</p>
+                                <p> <span x-text="destination.price" class="inline-block mb-6 text-3xl font-bold text-black tracking-wider"> £2850</span> <span class="pl-2 text-lg tracking-wider font-medium text-gray-400">/ per person</span></p>
+                                <button type="button"
+                                    class="p-3 w-full rounded-2xl bg-indigo-800 tracking-wider text-white">View Details</button>
+                            </div>
+        
+                        </div>
+                    </template>
+                </div>
+            </div>
+        
+        </div> <!-- end alpine thingy -->
+
+
+        <br><br><br><br><br><br><br><br>
+
+        <!-- a divider from tailwind UI -->
+        <div class="relative mt-24 mb-24">
+            <div class="absolute inset-0 flex items-center mx-8" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="px-2 bg-gray-50 text-sm text-gray-500">
+                    Breadcrumbs below
+                </span>
+            </div>
+        </div>
+
+        <!-- Breadcrumbs here -->
+        <nav class="flex mx-8" aria-label="Breadcrumb">
+            <ol role="list" class="flex items-center space-x-1">
+                <li>
+                    <div>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <!-- Heroicon name: solid/home -->
+                            <svg class="flex-shrink-0 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                            </svg>
+                            <span class="sr-only">Home</span>
+                        </a>
+                    </div>
+                </li>
+        
+                <li>
+                    <div class="flex items-center">
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                        </svg>
+                        <a href="#" class="ml-1 text-sm font-medium text-gray-500 hover:text-gray-700">Destinations</a>
+                    </div>
+                </li>
+        
+                <li>
+                    <div class="flex items-center">
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                        </svg>
+                        <a href="#" class="ml-1 text-sm font-medium text-gray-500 hover:text-gray-700"
+                            aria-current="page">North America</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                        </svg>
+                        <a href="#" class="ml-1 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">North
+                            America</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                        </svg>
+                        <a href="#" class="ml-1 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">North
+                            America</a>
+                    </div>
+                </li>
+                
+            </ol>
+        </nav>
+
+        <br><br><br><br>
+
+        
+
+
+    
+    
+    
+    </body>
+
+</html>

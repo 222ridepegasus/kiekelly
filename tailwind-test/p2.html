@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="dist/css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Grid Testing</title>
+    </head>
+
+    <body class="bg-gray-50">
+        
+        <header class="bg-white">
+            <nav class="px-6 xl:px-14 max-w-screen-xl mx-auto">
+                <div class="">
+                    <img class="h-full w-full bg-gray-600 object-cover" src="img/cropped/sey_640_1.jpg" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <div id="page_wrap" class="py-10 px-6 xl:px-14 max-w-screen-xl mx-auto"> <!-- container (stops fluid layout) -->
+
+
+                
+                <br><br><br><br><br><br><br><br>
+
+                <div class="grid grid-cols-12 gap-y-4 lg:gap-8">
+                
+                    <div class="grid order-last py-32 lg:order-none w-full col-span-12 md:col-span-8 bg-gray-400 text-center">I change my posistion</div>
+                
+                    <div class="col-span-12 lg:col-span-4">
+                        <div class="grid gap-4 grid-cols-12">
+                
+                            <div class="col-span-12 md:col-span-8 lg:col-span-12">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-2 opacity-30" src="img/icon_plane_outline.svg" alt="">
+                                        <p>Departure Airport</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-12 md:col-span-4 lg:col-span-12">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-2 opacity-30" src="img/icon_calendar.svg" alt="">
+                                        <p>Select a date</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-9">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-2 opacity-30" src="img/icon_destination_1st.svg" alt="">
+                                        <p>First Destination</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-3">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-1 opacity-30" src="img/icon_moon.svg" alt="">
+                                        <p>4 </p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-9">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-2 opacity-30" src="img/icon_destination_1st.svg" alt="">
+                                        <p>First Destination</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-3">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-1 opacity-30" src="img/icon_moon.svg" alt="">
+                                        <p>4</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-12 xl:col-span-12 ">
+                                <a href="" class="box-content flex justify-between py-2 px-3 border-2 border-gray-800 rounded-xl">
+                                    <span>Add a Destination</span>
+                                    <img class="" src="img/icon_plus.svg" alt="">
+                                </a>
+                            </div>
+                
+                            <div class="col-span-12 md:col-span-8 lg:col-span-12">
+                                <div class="flex justify-between py-2 px-2 bg-white rounded-lg">
+                                    <div class="flex">
+                                        <img class="mr-2 opacity-30" src="img/icon_user.svg" alt="">
+                                        <p>2 Adults, 1 Room, Economy</p>
+                                    </div>
+                                    <img class="" src="img/icon_select_chevron.svg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="col-span-12 md:col-span-4 lg:col-span-12 ">
+                                <a href=""
+                                    class="box-content flex justify-between py-2 px-3 bg-gray-800 border-2 border-gray-800 text-green-50 rounded-xl">
+                                    <span class="font-semibold ">Build my dream holiday</span>
+                                    <img class="" src="img/icon_arrow_right.svg" alt="">
+                                </a>
+                            </div>
+                
+                        </div>
+                    </div>
+                
+                    <div class="col-span-12 md:col-span-8">
+                        <!-- sets the grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div class="relative py-52 bg-white rounded-3xl shadow-md overflow-hidden">
+                                <!-- full image offer box, with label -->
+                        
+                                <div class="absolute inset-0">
+                                    <img class="h-full w-full bg-gray-600 object-cover" src="img/cropped/sey_640_1.jpg" alt="">
+                                    <div class="h-4/6 absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900"></div>
+                                </div>
+                                <div class="absolute bottom-0 p-6">
+                                    <p class="pb-3 text-2xl leading-tight tracking-wider font-semibold text-white">Iceland, Montreal & New
+                                        York</p>
+                                    <p>
+                                        <span class="inline-block pb-6 text-3xl font-bold text-white tracking-wider">£1500</span>
+                                        <span class="pl-2 text-lg tracking-wider font-medium text-gray-200">/ per person</span>
+                                    </p>
+                                    <a href="#"
+                                        class="flex box-border justify-center py-3 font-medium rounded-2xl tracking-widest text-white shadow-sm border-2 border-white hover:bg-gray-700">
+                                        View Details
+                                    </a>
+                                </div>
+                                <p class="absolute top-4 right-4 p-1 px-3 bg-gray-500 text-sm text-white rounded-xl ">Label here</p>
+                            </div>
+                        
+                            <div class="relative py-52 bg-white rounded-3xl shadow-md overflow-hidden">
+                                <!-- full image offer box, with label -->
+                        
+                                <div class="absolute inset-0">
+                                    <img class="h-full w-full bg-gray-600 object-cover" src="img/cropped/ny_640_1.jpg" alt="">
+                                    <div class="h-4/6 absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900"></div>
+                                </div>
+                                <div class="absolute bottom-0 p-6">
+                                    <p class="pb-3 text-2xl leading-tight tracking-wider font-semibold text-white">Vladivostok, The Kamchatka
+                                        Peninsula & Okinawa</p>
+                                    <p>
+                                        <span class="inline-block pb-6 text-3xl font-bold text-white tracking-wider">£1500</span>
+                                        <span class="pl-2 text-lg tracking-wider font-medium text-gray-200">/ per person</span>
+                                    </p>
+                                    <a href="#"
+                                        class="flex box-border justify-center py-3 font-medium rounded-2xl tracking-widest text-white shadow-sm border-2 border-white hover:bg-gray-700">
+                                        View Details
+                                    </a>
+                                </div>
+                                <p class="absolute top-6 right-6 p-1 px-3 bg-gray-500 text-sm text-white rounded-xl ">Label here</p>
+                            </div>
+
+                            <div class="relative col-span-2 py-52 bg-white rounded-3xl shadow-md overflow-hidden">
+                                <!-- full image offer box, with label -->
+                            
+                                <div class="absolute inset-0">
+                                    <img class="h-full w-full bg-gray-600 object-cover" src="img/cropped/thai_1.jpg" alt="">
+                                    <div class="h-4/6 absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900"></div>
+                                </div>
+                                <div class="absolute bottom-0 p-6">
+                                    <p class="flex flex-grow pb-3 text-2xl leading-tight tracking-wider font-semibold text-white">The Kuril Islands & Point Nemo</p>
+                                    <p>
+                                        <span class="inline-block pb-6 text-3xl font-bold text-white tracking-wider">£1500</span>
+                                        <span class="pl-2 text-lg tracking-wider font-medium text-gray-200">/ per person</span>
+                                    </p>
+                                    <a href="#"
+                                        class="flex flex-grow box-border justify-center py-3 font-medium rounded-2xl tracking-widest text-white shadow-sm border-2 border-white hover:bg-gray-700">
+                                        View Details
+                                    </a>
+                                </div>
+                                <p class="absolute top-6 right-6 p-1 px-3 bg-purple-600 text-sm text-white rounded-xl ">7 night twin centre</p>
+                            </div>
+                        </div>    
+                        
+                    </div>
+                
+                </div>
+                
+                <br><br><br><br><br><br><br><br>
+                
+    
+        </div>
+
+    
+    </body>
+
+</html>

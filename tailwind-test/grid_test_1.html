@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="dist/css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <title>Document</title>
+    </head>
+
+    <body class="bg-gray-50 pb-24">
+        
+            
+        <div class="mt-8 py-10 bg-green-700">
+            <div class="px-6 max-w-screen-xl mx-auto xl:px-14"><!-- container (stops fluid layout) -->
+
+                <div class="bg-green-400 h-16">
+
+                </div>
+
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="max-w-screen-xl mx-auto sm:px-6 xl:px-14">
+            <!-- container (stops fluid layout) -->
+        
+            <!-- Hero card rebuilt-->
+            <div class="h-[520px] py-8 bg-red-200 relative overflow-hidden shadow-m sm:h-[300px] sm:rounded-3xl md:h-[400px]">
+                <div class="absolute inset-0">
+                    <img class="h-full w-full object-cover" src="img/peyto_hero.jpg" alt="Nice picture of folks on holiday">
+                    <div class="h-full absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900 sm:bg-gradient-to-r"></div>
+                </div>
+                <div class="absolute w-full grid justify-items-center text-center bottom-0 px-8 sm:justify-items-start sm:w-8/12 sm:text-left md:px-12">
+                        <h1 class="mb-2 text-3xl font-bold tracking-wider text-white ">Vancouver, Banff & Montreal</h1>
+                        <p class="mb-6 text-lg tracking-wider text-gray-50">14 night multi centre holiday from <span class="font-semibold text-white">£1290</span> per person</p>
+                        <a href="#" class="mb-8 mx-auto px-8 py-3 font-medium rounded-2xl tracking-wider text-white shadow-sm bg-indigo-800 sm:mx-0 md:mb-12 hover:bg-indigo-900">Book Now</a>
+                </div>
+            
+            </div>
+
+        </div>
+
+
+        <br><br><br><br>
+
+
+
+
+        <div class="mx-auto pb-24 xl:max-w-screen-xl xl:px-4"> <!-- container (stops fluid layout) -->
+
+            <!-- Hero card rebuilt-->
+            <div class="h-[520px] py-8 bg-red-200 relative overflow-hidden shadow-m sm:h-[300px] sm:mx-6 sm:rounded-3xl md:h-[400px] lg:mx-10">
+                <div class="absolute inset-0">
+                    <img class="h-full w-full object-cover" src="img/dubai_hero_test.jpg" alt="Nice picture of folks on holiday">
+                    <div class="h-full absolute inset-x-0 bottom-0 bg-gradient-to-t from-gray-900 sm:bg-gradient-to-r"></div>
+                </div>
+                <div class="absolute w-full grid justify-items-center text-center bottom-0 px-8 sm:justify-items-start sm:w-8/12 sm:text-left md:px-12">
+                        <h1 class="mb-2 text-3xl font-bold tracking-wider text-white ">Bangkok, Chiang Mai & Koh Samui</h1>
+                        <p class="mb-6 text-lg tracking-wider text-gray-50">14 night multi centre holiday from <span class="font-semibold text-white">£1290</span> per person</p>
+                        <a href="#" class="mb-8 mx-auto px-8 py-3 font-medium rounded-2xl tracking-wider text-white shadow-sm bg-indigo-800 sm:mx-0 md:mb-12 hover:bg-indigo-900">Book Now</a>
+                </div>
+            
+            </div>
+        
+            <br /><br /><br />
+        
+            <div x-data="
+                        {destinations:[
+                            {name:'New York, The Falkland Islands, Las Vegas & San Fransisco', image:'img/cropped/ny_640_5.jpg', type:'7 night twin centre holiday', price:'£2550'},
+                            {name:'San Fransisco, Los Angeles and Cancun', image:'img/cropped/test_640_1.jpg', type:'14 night twin centre holiday',price:'£1260'},
+                            {name:'Iceland & Greenland', image:'img/cropped/ice_640_2.jpg',type:'14 multi twin centre holiday',price:'£850'},
+                            {name:'Paris, Dubai & The Maldives', image:'img/cropped/sey_640_1.jpg', type:'21 multi twin centre holiday',price:'£2299'},
+                            {name:'Oslo, Lapland, Helsinki', image:'img/cropped/ice_640_4.jpg', type:'10 multi twin centre holiday',price:'£850'},
+                            {name:'Bangok, Hong Kong, Singapore', image:'img/cropped/thai_1.jpg', type:'14 night multi centre holiday',price:'£999'}
+                            ]}
+                    ">
+
+                <!-- card offer grid-->
+                <div class="mx-auto xl:max-w-screen-xl xl:px-4">
+                    <div class="px-6 space-y-6 sm:space-y-0 sm:grid sm:gap-6 sm:grid-cols-2 md:gap-10 lg:grid-cols-3">
+                            
+                        <!-- card offer component -->
+                        <template x-for="destination in destinations">
+                            <div class="grid content-between bg-white rounded-3xl shadow-md overflow-hidden">
+                                <div>
+                                    <img class="h-56 w-full object-cover" x-bind:src="destination.image" alt="a beautiful holiday picture">
+                                    <p x-text="destination.name" class="p-6 pt-4 pb-0 text-2xl leading-tight tracking-wider font-semibold text-black"></p>
+                                </div>
+                                <div class="p-6 pt-0">  
+                                    <p x-text="destination.type" class="mt-2 mb-4 pb-4 tracking-wider text-gray-800 border-b border-gray-300">7 night twin centre holiday</p>
+                                    <p> <span x-text="destination.price" class="inline-block mb-6 text-3xl font-bold text-black tracking-wider"> £2850</span> <span class="pl-2 text-lg tracking-wider font-medium text-gray-400">/ per person</span></p>
+                                    <a href="#"
+                                        class="flex items-center justify-center px-4 py-3 text-base font-medium rounded-2xl tracking-wider text-white shadow-sm bg-indigo-800 hover:bg-indigo-900">
+                                        View Details
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </template>
+
+                    </div>
+                </div>
+            
+            </div> <!-- end alpine thingy -->
+       
+        
+        
+        
+        </div> <!-- end container -->
+    
+    </body>
+
+</html>
