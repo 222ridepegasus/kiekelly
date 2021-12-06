@@ -10,14 +10,14 @@
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
   </head>
-  <body>
-    <header>
+  <body class="bg-pink-500 text-white">
+    <header class="flex">
       <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul>
+      <ul class="flex">
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="{% if entry.url == page.url %}{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        <li class="ml-2 {% if entry.url == page.url %}{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
     </header>
