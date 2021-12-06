@@ -3,11 +3,13 @@
   "version": "5.0.2",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
+    "build": "eleventy & npm run tailwind:build",
+    "watch": "eleventy --watch & npm run tailwind:watch",
     "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "start": "eleventy --serve & npm run tailwind:watch",
+    "debug": "DEBUG=* eleventy",
+    "tailwind:build": "NODE_ENV=production npx tailwindcss -i css/tailwind.css -c tailwind.config.js -o _site/css/styles.css --minify",
+    "tailwind:watch": "npx tailwindcss -i css/tailwind.css -c tailwind.config.js -o _site/css/styles.css --watch"
   },
   "repository": {
     "type": "git",
