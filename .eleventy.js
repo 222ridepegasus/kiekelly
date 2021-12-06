@@ -56,9 +56,14 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
-  // Copy the `img` and `css` folders to the output
+  // Copy the `img` folder to the output
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+
+  // Watch Tailwind files for changes in development
+  eleventyConfig.addWatchTarget('./tailwind.config.js')
+  eleventyConfig.addWatchTarget('./css/tailwind.css')
+  // This should optimise hot module reloading in development
+  eleventyConfig.addPassthroughCopy({ './_tmp/css/styles.css': './css/styles.css' })
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
