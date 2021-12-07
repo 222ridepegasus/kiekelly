@@ -4,9 +4,9 @@ layout: layouts/post.njk
 title: New blog starts here...
 description: Introduction to the blog
 tags:
-- general
-
+  - general
 ---
+
 Ok, here we go
 
 Here begins an intrepid voyage into - blah, blah, blah... Basically this blog will be a semi-coherent diary of ramblings spanning the full spectrum of my limited knowledge on a distinctively narrow range of subjects.

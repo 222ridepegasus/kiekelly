@@ -8,6 +8,16 @@ module.exports = {
   },
   theme: {
     extend: {
+      typography: {
+        kieran: {
+          css: {
+            color: '#fff',
+            h2: {
+              color: 'inherit',
+            }
+          },
+        },
+      },
     },
   },
   variants: {},
