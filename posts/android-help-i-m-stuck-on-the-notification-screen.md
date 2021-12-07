@@ -1,7 +1,7 @@
 ---
 date: 2021-12-07
 layout: layouts/post.njk
-title: 'Android: Help I''m stuck on the notification screen!'
+title: 'Android: Help! I''m stuck on the notification screen'
 description: The Android niggle list starts here...
 tags:
 - ui
@@ -16,7 +16,7 @@ Anyway, in an effort to once again be more platform-agnostic I switched to Andro
 
 So it is then, here begins a chronicle of Android's good, bad and and ugly...
 
-### 1. Help I'm stuck on the notification screen!
+### 1. Help! I'm stuck on the notification screen
 
 My device recently updated to Android v12, which was kinda weird as it just happened, rather than a considered action on iOS (maybe its my settings). Anyway, it's a fairly radical visual shift, and not one that mind at all. However,  This left me perplexed:
 
