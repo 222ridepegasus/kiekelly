@@ -10,7 +10,7 @@ templateClass: tmpl-post
 <a href="{{ tagUrl | url }}">{{ tag }}</a>
 {%- endfor %}
 
-<div class="prose prose-xl prose-kieran ">{{ content | safe }}</div>
+<div class="prose prose-xl">{{ content | safe }}</div>
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
