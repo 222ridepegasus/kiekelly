@@ -2,10 +2,9 @@
 date: 2021-12-06
 layout: layouts/post.njk
 title: New blog starts here...
-description: Yeah kinda stuff
+description: Introduction to the blog
 tags:
 - general
-- test
 
 ---
 Ok, here we go
