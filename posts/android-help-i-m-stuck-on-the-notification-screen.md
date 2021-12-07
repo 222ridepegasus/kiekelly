@@ -8,7 +8,9 @@ tags:
 - android
 
 ---
-**iOS or Android?** A bottomless cauldron of subjective debate war. As a Mac user I've always leaned to the prior, thought honestly, I am not particularly fussy as I dont see phones as anything more than a utility these days.
+## **iOS or Android?** 
+
+A bottomless cauldron of subjective debate war. As a Mac user I've always leaned to the prior, thought honestly, I am not particularly fussy as I dont see phones as anything more than a utility these days.
 
 Anyway, in an effort to once again be more platform-agnostic I switched to Android at the start of the year.  Tbh, I really don't mind, especially considering the price difference (I run a budget Pixel 3a) but I do miss the regimented simplicity of iOS.
 
