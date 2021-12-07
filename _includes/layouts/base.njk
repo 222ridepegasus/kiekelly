@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+    <link rel="stylesheet" href="{{ 'css/styles.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
   </head>
-  <body class="bg-pink-500 text-white">
+  <body class="bg-purple-400 text-white">
     <header class="flex">
       <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
@@ -26,7 +26,7 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <footer class="mt-10 bg-red-600 "></footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
