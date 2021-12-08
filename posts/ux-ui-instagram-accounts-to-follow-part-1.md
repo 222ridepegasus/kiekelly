@@ -12,7 +12,7 @@ tags:
 ---
 Instagram is the only social media platform I use these days having pretty much abandoned Facebook and Twitter a few years back (time and toxicity).
 
-Whilst I still think Instagram = procrastination, it can be tailored to serve up interesting content (aside from your social circle). In my case this relates to UX and UI, or design in general. However, you really need to drill through to find such material as the feeds are seemingly awash with questionable, regurgitated posts that swirl around and around, never vanishing down the proverbial plughole.
+Whilst I still think Instagram = procrastination, it can be tailored to serve up interesting content (social circle aside). In my case this relates to UX and UI, or design in general. However, you really need to drill through to find such material as the feeds are seemingly awash with questionable, regurgitated posts that swirl around and around, never vanishing down the proverbial plughole.
 
 Fear not, as help is at hand to scythe the chaff. Here's my selection of useful UX/UI accounts to follow:
 
