@@ -46,7 +46,7 @@ The standard is solid, but in truth a search through Behance or Dribbble could y
 
 As showcased designs are often entirely UI fluff, it's also good to scan with an objective UX eye. Often showcased material, though evidently pretty, simply wouldn't work in the real world.
 
-I guess what I find most interesting here then is the chance to quickly refine or reinforce your own design ideologies, a 5 second scan, process, and move on.
+I guess what I find most interesting here then is the chance to quickly refine or reinforce your own design ideologies via continual osmosis, a 5 second scan, process, and move on.
 
 Follow UI.interceptor at: [instagram.com/ui.interceptor](instagram.com/ui.interceptor)
 
