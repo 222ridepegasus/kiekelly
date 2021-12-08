@@ -32,7 +32,7 @@ Follow Robin at: [instagram.com/ux.robin/]()
 
 There's not doubt about it, Figma is the greatest invention of the last 20 years. So, what better way for modern attention-drifting brains to learn the tool than a series of bite-sized videos, courtesy of British UX/UI Designer Zander Whitehurst.
 
-As his 150,000+ follower count suggests, Zander's pretty much cornered the market here. I learnt quite a few tricks, and even if not always relevant his infectious, if cheesy, energy is compelling.
+As his 150,000+ follower count suggests, Zander's pretty much cornered the market here. I learnt quite a few tricks, and even if videos are not always relevant, the infectious, if cheesy, energy is compelling.
 
 Follow Zander at [instagram.com/zanderwhitehurst/](https://www.instagram.com/zanderwhitehurst/ "https://www.instagram.com/zanderwhitehurst/") and also check out his recently launched school of UX/UI [www.memorisely.com](https://www.memorisely.com "https://www.memorisely.com").
 
@@ -42,9 +42,9 @@ Follow Zander at [instagram.com/zanderwhitehurst/](https://www.instagram.com/zan
 
 UI interceptor fashions itself as a UI Design Magazine and posts daily design inspirations, it's mainly app focussed but occasionally serves web showcases.
 
-The standard is solid, but In truth a search through Behance or Dribbble could yield better designed content. The point here however is that you experience a constant stream of on-trend content, think of it as a UI style barometer for the subconscious.
+The standard is solid, but in truth a search through Behance or Dribbble could yield better designed content. The point here however is that you experience a constant stream of on-trend content, think of it as a UI style barometer for the subconscious.
 
-As showcased designs are often entirely UI fluff, it's also good to scan with an objective UX eye. Often designs, though evidently pretty, simply wouldn't work in the real world. 
+As showcased designs are often entirely UI fluff, it's also good to scan with an objective UX eye. Often showcased material, though evidently pretty, simply wouldn't work in the real world. 
 
 I guess what I find most interesting here then is the chance to quickly refine or reinforce your own design ideologies, a 5 second scan, process, and move on. 
 
