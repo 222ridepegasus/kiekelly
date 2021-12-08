@@ -3,7 +3,7 @@
   "version": "5.0.2",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "eleventy & npm run tailwind:build",
+    "build": "eleventy && npm run tailwind:build",
     "watch": "eleventy --watch & npm run tailwind:watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve & npm run tailwind:watch",
