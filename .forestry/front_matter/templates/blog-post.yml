@@ -1,4 +1,3 @@
----
 label: Blog post
 hide_body: false
 fields:
@@ -35,6 +34,11 @@ fields:
   label: layout
   hidden: true
   default: layouts/post.njk
+- type: media
+  name: featured_image
+  label: Featured Image
+  config:
+    required: false
 pages:
 - posts/so-this-is-like-my-2nd-post.md
 - posts/ux-ui-instagram-accounts-to-follow-part-1.md
