@@ -2,15 +2,15 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<h1 class="pb-4 md:text-4xl md:pt-6 md:pb-8 font-semibold text-2xl">{{ title }}</h1>
 
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+<time class="block  pb-4" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 {%- for tag in tags | filterTagList -%}
 {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-<a href="{{ tagUrl | url }}">{{ tag }}</a>
+<a class="mr-2 font-semibold text-gray-800 underline rounded-lg" href="{{ tagUrl | url }}">{{ tag }}</a>
 {%- endfor %}
 
-<div class="prose prose-xl">{{ content | safe }}</div>
+<div class="pt-6 prose prose-xl">{{ content | safe }}</div>
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}

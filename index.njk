@@ -9,6 +9,16 @@ eleventyNavigation:
 
 {% set postslist = collections.posts | head(-4) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+
+{% for post in postslist %}
+  <article>
+    {% if post.data.featured_image %}
+      <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" class="w-full h-auto">
+    {% endif %}
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <p class="text-sm text-gray-500 mb-2">{{ post.date | date("MMMM D, YYYY") }}</p>
+    <p>{{ post.data.description }}</p>
+  </article>
+{% endfor %}
 
 <p class="pt-4">More posts can be found in <a href="{{ '/posts/' | url }}" class="underline">the archive</a>.</p>

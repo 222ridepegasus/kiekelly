@@ -14,22 +14,22 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
   </head>
   <body class="bg-peg-grey">
-    <header class="bg-peg-grey-light pt-4 py-3">
+    <header class="bg-white pt-4 py-3">
         <div class="px-4 sm:flex sm:justify-between max-w-screen-lg mx-auto">
             <h1 class="pl-2 text-lg tracking-wide font-semibold"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
             {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-            <ul class="flex gap-x-3 tracking-wide ">
+            <ul class="flex gap-x-3 tracking-wide">
             {%- for entry in collections.all | eleventyNavigation %}
               <li class="ml-2 {% if entry.url == page.url %}{% endif %}">
-                  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                  <a class="underline" href="{{ entry.url | url }}">{{ entry.title }}</a>
               </li>
             {%- endfor %}
             </ul>
         </div>  
     </header>
 
-    <main{% if templateClass %} class="px-6 pt-4 {{ templateClass }}"{% endif %}>
+    <main{% if templateClass %} class="px-6 pt-6 max-w-screen-lg mx-auto {{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
 
